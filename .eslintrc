@@ -1,7 +1,12 @@
 {
-    "extends": ["airbnb-base", "prettier"],
-    "plugins": ["jest", "prettier"],
-    "env": {
-      "jest/globals": true
-    }
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "prettier/@typescript-eslint",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "jest", "prettier"],
+  "env": {
+    "jest/globals": true
+  }
 }
