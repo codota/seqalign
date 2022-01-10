@@ -3,8 +3,8 @@ export const NWaligner: ({ similarityScoreFunction, gapScoreFunction, gapSymbol,
     gapScoreFunction?: any;
     gapSymbol?: any;
 }) => {
-    similarityScoreFunction: any;
-    gapScoreFunction: any;
+    similarityScoreFunction?: (item1: any, item2: any) => number;
+    gapScoreFunction: () => number;
     gapSymbol: any;
     directions: Readonly<{
         NONE: number;
